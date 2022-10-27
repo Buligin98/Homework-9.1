@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            შეუკვეთე პროდუქტი დღესვე
+        </h1>
+    </header>
+    <main>
+        <form action="congr.html" method="post" class="order">
+        <input type="text" name="firstname" id="firstname" required placeholder="სახელი">
+            
+        <input type="text" name="lastname" id="lastname" required placeholder="გვარი">
+
+        <input type="text" name="contact" id="contact" required placeholder="ტელეფონის ნომერი">
+
+        <label for="adress" class="adress">გთხოვთ მიუთითოთ ზუსტი მისამართი</label>
+        <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+
+        <p class="text">აირჩიეთ გადახდის მეთოდი</p>
+        <div class="payment">
+            <input type="radio" name="payment" id="card" checked>
+            <label>
+                ბარათით გადახდა
+            </label>
+
+            <input type="radio" name="payment" id="cash">
+            <label>
+                ქეშით გადახდა
+            </label>
+        </div>
+        
+
+        <input type="submit" value="შეკვეთის გაფორმება">
+        </form>
+
+            
+    </main>
+</body>
+</html>
